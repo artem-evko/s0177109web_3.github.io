@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* .header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #101010;
+} */
+.header {
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+
+}
+.header img {
+    width: 80px;
+    height: 80px;
+    float: left;   
+}
+.header_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_text {
+    height: 100%;
+    display: table;
+    float: left;
+    margin-right: 20px;
+}
+.main_content_container {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+}
+.main_content_container :nth-child(1) {
+    order: 1;
+}
+.main_content_container :nth-child(2) {
+    order: 3;
+}
+.main_content_container :nth-child(3) {
+    order: 2;
+}
+
+/* .inner_header {
+    width: 100%;
+    height: 100%;
+    display: block;
+} */
+
+.logo_text h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 200;
+}
+.logo_text h1 span {
+    font-weight: 800;
+}
+ .navigation   {
+   justify-content: center;
+    display: flex;
+    list-style: none;
+    height: 100%;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column-reverse;
+} 
+ .navigation li a{
+    display: block;
+    padding: 30px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+} 
+.navigation li  {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 0px 20px;
+}
+.navigation li ul.links li{
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+.navigation li ul.links{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding-inline-start: 0;
+    background-color: #c50b0b71;
+}
+.navigation li:hover ul.links{
+    display: block;
+    background-color: #c50b0bbd;
+}
+
+ .navigation li a:hover{
+    background-color: #c50b0b71;
+} 
+
+.hyperlinks{
+    text-align: center;
+ }
+  .form{
+     text-align: center;
+     margin-bottom: 20px;
+  } 
+  .table_center {
+    /* width: 500px; */
+    margin: auto;
+    } */
+ table, td {
+    border: 1px solid grey;
+ } 
+ table, th {
+    border: 1px solid grey;
+ }
+ table {
+    border-collapse: collapse;
+} 
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #101010;
+}
+
+.form_save{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #0c8eff;
+    cursor: pointer;
+}
+.form input[type = "text"], input[type = "tel"], input[type = "email"], input[type = "date"] {
+    border: 0;
+    background: gray;
+    border-radius: 20px;
+    height: 18px;
+}
+.form input[type = "text"]::placeholder,input[type = "tel"]::placeholder,input[type = "email"]::placeholder{
+    color: #ffffffbd;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-indent: 12.5px;
+}
+.footer p {
+    padding-left: 20px;
+    color: white;
+}
+.table_center tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.table_center tr:nth-child(odd) {
+    background-color: #4164f487;
+}
+.table_center caption {
+    background-color: #419dee; 
+    color: rgb(0, 0, 0); 
+}
+.table_center th {
+    background-color: #0074d9; 
+    color: rgb(0, 0, 0); 
+}
+.table_center table, .table_center td {
+    border: 1px solid grey;
+}
+.table_center th[colspan="4"] {
+    background-color: #0074d9; 
+    color: rgb(0, 0, 0); 
+}
+@media (min-width: 769px)  {
+    .main_content_container :nth-child(1) {
+        order: 1;
+    }
+    .main_content_container :nth-child(2) {
+        order: 2;
+    }
+    .main_content_container :nth-child(3) {
+        order: 3;
+    }
+    
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navigation {
+
+        display: flex;
+        list-style: none;
+        height: 100%;
+        padding-inline-start: 0;
+    }
+    .table_center {
+        width: 100%; 
+        overflow-x: auto; 
+    }
+
+    table {
+        width: 100%; 
+    }
+    .header1 {
+        display: block;
+    }
+}

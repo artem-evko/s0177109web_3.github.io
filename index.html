@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Второе задание</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_cont">
+        <img src="logo1.png" alt="лого" />
+        <div class="logo_text">
+          <h1>KORBEN<span>DALLAS</span></h1>
+        </div>
+      </div>
+
+      <div class="inner_header">
+        <nav>
+          <ul class="navigation header1" >
+            <li>
+              <a href="">Menu</a>
+              <ul class="links">
+                <li><a href="#Hyperlink">Гиперссылки</a></li>
+                <li><a href="#Table">Таблица</a></li>
+                <li><a href="#Form">Форма</a></li>
+              </ul>
+            </li>
+            <li><a href="#Table">Таблица</a></li>
+            <li><a href="#Form">Форма</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+   
+    <div class="main_content_container">
+      <div class="hyperlinks">
+        <ul id="Hyperlink">
+          <li>
+            <a href="http://kubsu.ru">КубГУ</a>
+          </li>
+
+          <li>
+            <a href="https://kubsu.ru">КубГУ,но https</a>
+          </li>
+
+          <li id="flower">
+            <a href="http://kubsu.ru"
+              ><img src="image.jpg" alt="фото цветка" height="200"
+            /></a>
+          </li>
+          <li>
+            <a href="/Users">Внутренняя</a>
+          </li>
+          <li>
+            <a href="/">Главная</a>
+          </li>
+
+          <li>
+            <a href="#flower">Ссылка на цветок</a>
+          </li>
+          <li>
+            <a
+              href="https://google.com/page?param1=value1&amp;param2=value2&amp;param3=value3"
+              >Ссылка с 3-мя параметрами</a
+            >
+          </li>
+          <li><a href="http://google.com?id=1">Ссылка</a></li>
+          <li>
+            <a href="index.html">Относительная на текущий</a>
+          </li>
+          <li>
+            <a href="./about.html">about</a>
+          </li>
+          <li>
+            <a href="./one/upOne.html">Относительная на католог выше</a>
+          </li>
+          <li>
+            <a href="./one/two/upSecond.html">Относительная на 2 каталога выше</a>
+          </li>
+          <li>
+            <p>
+              Контекстная на
+              <a href="https://www.kubsu.ru/index.php">официальный сайт</a>
+              Кубгу
+            </p>
+          </li>
+          <li>
+            <a href="https://ru.wikipedia.org/wiki/HTML5#Свойства"
+              >Ссылка на фрагмент страницы стороннего сайта</a
+            >
+          </li>
+        </ul>
+        
+        <img
+          src="knopka.png"
+          alt="кнопка"
+          height="200"
+          width="200"
+          usemap="#circle"
+        />
+        <map name="circle">
+          <area
+            shape="circle"
+            coords="100,100,100"
+            href="https://html5book.ru/osnovy-html/#part7"
+            alt="кнопка"
+          />
+        </map>
+
+        <img
+          src="color_label_rectagle_orange.jpg"
+          alt="прямоугольник"
+          height="100"
+          width="200"
+          usemap="#color_label"
+        />
+        <map name="color_label">
+          <area
+            shape="rect"
+            coords="10,10,400,80"
+            href="https://www.kubsu.ru/ru/node/21"
+            alt="прямоугольник"
+          />
+        </map>
+        <ul>
+          <li>
+            <a href="">Пустая ссылка</a>
+          </li>
+          <li>
+            <a title="Nohref">without href</a>
+          </li>
+          <li>
+            <a href="http://google.com/" rel="nofollow"
+              >Запрещен переход поисковикам</a
+            >
+          </li>
+          <li>
+            <a href="http://google.com/" rel="nofollow"
+              ><!--<noindex>-->Запрещен для индексации поисковикам<!--</noindex>--></a
+            >
+          </li>
+        </ul>
+        <ol>
+          <li>
+            <a href="http://google.com/" title="google">Гугл</a>
+          </li>
+          <li>
+            <a href="https://html5book.ru/osnovy-html/#part4" title="HTML"
+              >HTML5 book</a
+            >
+          </li>
+        </ol>
+      </div>
+      <table id="Table" class="table_center">
+        <caption>
+          Rating of the popularity
+        </caption>
+        <tr>
+          <th>назв.</th>
+          <th>№</th>
+          <th>%</th>
+          <th>основ. сфера</th>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>1</td>
+          <td>67.8%</td>
+          <td>Web-разработка</td>
+        </tr>
+        <tr>
+          <td>HTml/CSS</td>
+          <td>2</td>
+          <td>63.5%</td>
+          <td>Web-разработка</td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>3</td>
+          <td>54.4%</td>
+          <td>Управление данными</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>4</td>
+          <td>41.7%</td>
+          <td>ПО разработка</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>5</td>
+          <td>41.1%</td>
+          <td>ПО разработка</td>
+        </tr>
+        <tr>
+          <td>PowerShell</td>
+          <td>6</td>
+          <td>36.6%</td>
+          <td>автом. процессов</td>
+        </tr>
+      </table>
+    
+
+    <div class=" form">
+      <h1 id="Form">Форма HTML</h1>
+      <form action="/" method="POST">
+        <label>
+          ФИО:<br />
+          <input name="FCs" type="text" placeholder="фамилия имя отчество" required/>
+          <br />
+        </label>
+        <label
+          >Номер телефона<br />
+          <input name="number" type="tel" required placeholder="+7"/>
+          <br />
+        </label>
+        <label>
+          Ваш email<br />
+          <input name="email" type="email" required placeholder="@"/>
+          <br />
+        </label>
+        <label>
+          Дата рождения<br />
+          <input name="date" value="2023-09-08" type="date" required />
+          <br />
+        </label>
+        Пол:<br />
+        <label
+          ><input
+            type="radio"
+            checked="checked"
+            name="radio"
+            value="Значение1"
+          />
+          Мужской</label
+        >
+        <br />
+        <label
+          ><input type="radio" name="radio" value="Значение2" /> Женский<br
+        /></label>
+        <label>
+          Любимый язык программированя<br />
+          <select name="язык программирования" multiple="multiple" size="8">
+            <option value="Значение1" selected="selected">Pascal</option>
+            <option value="Значение2" selected="selected">C</option>
+            <option value="Значение3" selected="selected">C++</option>
+            <option value="Значение4" selected="selected">JavaScript</option>
+            <option value="Значение5" selected="selected">PHP</option>
+            <option value="Значение6" selected="selected">Python</option>
+            <option value="Значение7" selected="selected">Java</option>
+            <option value="Значение8" selected="selected">Haskel</option>
+            <option value="Значение9" selected="selected">Clojure</option>
+            <option value="Значение10" selected="selected">Prolog</option>
+            <option value="Значение11" selected="selected">Scala</option>
+          </select> </label
+        ><br />
+        <label>
+          Биография:<br />
+          <textarea name="Биография" placeholder="..."></textarea></label
+        ><br />
+        С контрактом ознакомлен(а)
+        <label><input type="checkbox" name="contract" /> </label><br />
+        <label>
+          <input class="form_save" type="submit" value="Сохранить" />
+        </label>
+      </form>
+    </div>
+    </div>
+    <footer class="footer">
+      <p>(C)Евко Артём</p>
+    </footer>
+  </body>
+</html>
